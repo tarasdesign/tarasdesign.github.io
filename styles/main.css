@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+:root {
+	--black: #000;
+	--ash: #999;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	color: var(--black);
+	font-weight: 400;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 600;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+h2 .title {
+	color: var(--ash);
+}
+
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+img, video {
+	width: 100%;
+}
+
+.gray {background: #ddd;}
+
+.block, .thumb {
+	display: block;
+}
+
+.col-desc p {
+	color: var(--ash);
+	padding-top: 1em;
+}
+
+.clear {
+	clear: both;
+}
+
+.button {
+	background: var(--black);
+	color: white;
+	font-weight: 500;
+	display: inline-block;
+	padding: 16px 24px 5px 24px;
+}
+
+.button:hover {
+	opacity: 0.75;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu a, .col a, h2 a {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu a:hover, .col a:hover, h2 a:hover {
+	border-bottom: 1px solid var(--black);
+}
+
+ol li {
+	list-style: decimal;
+	list-style-position: outside;
+	margin-left: 1.5em;
+	padding-left: 0.5em;
+	padding-bottom: 1em;
+}
+
+.col p {
+	padding-bottom: 1em;
+}
+
+.col p:last-child {
+	padding-bottom: 0;
+}
+
+.footer {
+	padding-top: 25vh;
+}
+
+.highway {
+	background-image: url("../images/jackreports/jackreports-highway.png");
+	background-position: top;
+	background-repeat: repeat-y;
+	background-attachment: fixed;	
+}
+
+.gps {
+	width: 100%;
+}
+
+.sub {
+	vertical-align: sub;
+}
+
