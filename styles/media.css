@@ -6,7 +6,7 @@
 
 @media all and (max-width: 760px) {
 	
-	.hidden, .button, .logo {
+	.hidden, .button {
 		display: none;
 	}
 
@@ -107,6 +107,18 @@
 
 	.col-desc {
 		margin-bottom: 40px;
+	}
+	
+	.logo {
+		position: absolute;
+		display: block;
+		background-image: url("../images/logo.svg");
+		background-size: 36px 24px;
+		width: 36px;
+		height: 24px;
+		top: 20px;
+		left: calc((100% - 36px) / 2);
+		border-bottom: none !important;
 	}
 	
 	.highway {
