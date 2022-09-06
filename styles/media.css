@@ -83,7 +83,6 @@
 		margin-bottom: 20px;
 	}
 	
-	
 	.home img, .thumb img, .col-desc img {
 		margin-bottom: 0;
 	}
@@ -111,10 +110,9 @@
 	}
 	
 	.highway {
-		background-size: 100%;
-		margin-bottom: 20px;
+		display: none;
 	}
-	
+
 }
 
 
@@ -241,6 +239,10 @@
 	.highway {
 		background-size: calc(100% - 80px);
 		margin-bottom: 40px;
+	}
+	
+	.mobile {
+		display: none;
 	}
 
 }
