@@ -111,6 +111,10 @@
 	.highway {
 		display: none;
 	}
+	
+	.footer {
+		padding-top: 20vh;
+	}
 
 }
 
@@ -242,6 +246,10 @@
 	
 	.mobile {
 		display: none;
+	}
+	
+	.footer {
+		padding-top: 25vh;
 	}
 
 }

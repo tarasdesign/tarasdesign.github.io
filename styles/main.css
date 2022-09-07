@@ -63,6 +63,7 @@ img, video {
 
 .col-desc p {
 	color: var(--ash);
+	padding-top: 1em;
 }
 
 .clear {
@@ -108,10 +109,6 @@ ol li {
 
 .col p:last-child {
 	padding-bottom: 0;
-}
-
-.footer {
-	padding-top: 25vh;
 }
 
 .highway {
