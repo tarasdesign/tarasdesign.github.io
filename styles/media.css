@@ -23,13 +23,9 @@
 		padding-right: 20px;
 	}
 
-	.block, .thumb, .profile .col {
-		margin-bottom: 60px;
-	}
-	
-	.col {
+	.block, .thumb, .col, .profile .col {
 		margin-bottom: 40px;
-	} 
+	}
 	
 	.footer {
 		margin-bottom: 20px;
@@ -62,17 +58,9 @@
 		height: 32px;
 	}
 	
-	.menu a {
-		padding-top: 20px;
+	.menu a, .menu a:hover {
+		margin-top: 20px;
 		border: 0;
-	}
-	
-	.menu a:hover {
-		border: 0;
-	}
-	
-	.menu a:first-child {
-		width: 60px;
 	}
 	
 	.menu a:last-child {
@@ -95,7 +83,6 @@
 		margin-bottom: 20px;
 	}
 	
-	
 	.col-desc p {
 		font-size: 14px;
 		line-height: 24px;
@@ -116,7 +103,7 @@
 		background-size: 36px 24px;
 		width: 36px;
 		height: 24px;
-		top: 20px;
+		top: 22px;
 		left: calc((100% - 36px) / 2);
 		border-bottom: none !important;
 	}
