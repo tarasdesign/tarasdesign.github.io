@@ -14,9 +14,18 @@
 }
 
 body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
 	font-family: 'Inter', sans-serif;
 	color: var(--black);
 	font-weight: 400;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
 }
 
 a {
