@@ -47,6 +47,11 @@
 	}
 	
 	h3 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	h4 {
 		font-size: 15px;
 		line-height: 28px;
 		margin: 12px 0 4px 0;
@@ -182,8 +187,13 @@
 		font-size: 60px;
 		line-height: 80px;
 	}
-		
-	h3, .thumb h2 {
+	
+	h3 {
+		font-size: 20px;
+		line-height: 36px;
+	}
+	
+	h4, .thumb h2 {
 		font-size: 18px;
 		line-height: 36px;
 		margin: 24px 0 8px 0;
