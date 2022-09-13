@@ -6,7 +6,7 @@
 
 @media all and (max-width: 760px) {
 	
-	.hidden, .button {
+	.desktop-only, .button {
 		display: none;
 	}
 
@@ -84,8 +84,12 @@
 		margin-bottom: 0;
 	}
 	
-	.col-2 img:first-child {
+	.col-2 .noindent {
 		margin-bottom: 20px;
+	}
+	
+	.col-2 .noindent:last-child {
+		margin-bottom: 0;
 	}
 	
 	.col-desc p {
@@ -113,10 +117,6 @@
 		border-bottom: none !important;
 	}
 	
-	.highway {
-		display: none;
-	}
-	
 	.footer {
 		padding-top: 20vh;
 	}
@@ -127,6 +127,10 @@
 /* DESKTOP */
 
 @media all and (min-width: 761px) {
+	
+	.mobile-only {
+		display: none;
+	}
 		
 	.content {
 		margin-top: 120px;
@@ -252,10 +256,6 @@
 	.highway {
 		background-size: calc(100% - 80px);
 		margin-bottom: 40px;
-	}
-	
-	.mobile {
-		display: none;
 	}
 	
 	.footer {
