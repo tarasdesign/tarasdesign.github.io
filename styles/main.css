@@ -106,7 +106,13 @@ ol li {
 	list-style: decimal;
 	list-style-position: outside;
 	margin-left: 1.5em;
-	padding-left: 0.5em;
+	padding-bottom: 1em;
+}
+
+ul li {
+	list-style: disc;
+	list-style-position: outside;
+	margin-left: 1.5em;
 	padding-bottom: 1em;
 }
 
