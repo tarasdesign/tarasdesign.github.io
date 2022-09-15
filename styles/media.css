@@ -4,7 +4,7 @@
 
 /* MOBILE */
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 740px) {
 	
 	.desktop-only, .button {
 		display: none;
@@ -126,7 +126,7 @@
 
 /* DESKTOP */
 
-@media all and (min-width: 761px) {
+@media all and (min-width: 741px) {
 	
 	.mobile-only {
 		display: none;
@@ -348,3 +348,17 @@
 
 }
 
+
+/* iOS DEVICES */
+
+@supports (-webkit-touch-callout: none) {
+	
+	.highway {
+		display: none;
+	}
+	
+	.ios-only {
+		display: block;
+	}
+	
+}
