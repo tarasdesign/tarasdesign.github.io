@@ -175,7 +175,7 @@
 	
 	.col-desc p {
 		margin-bottom: 60px;
-		width: 800px;
+		width: 100%;
 	}
 	
 	.footer {
@@ -273,6 +273,7 @@
 	.col {
 		width: 800px;
 	}
+	
 }
 
 @media all and (min-width: 1360px) {
