@@ -359,6 +359,8 @@
 	
 	.ios-only {
 		display: block;
+		background: yellow;
+		height: 400px;
 	}
 	
 }
