@@ -365,14 +365,16 @@
 
 /* iPad */
 
-@supports (-webkit-touch-callout: none) and (min-width: 741px) {
+@media (min-width: 741px) {
 	
-	.highway, .iphone-only {
-		display: none;
-	}
+	@supports (-webkit-touch-callout: none) {
 	
-	.ipad-only {
-		display: inline;
-	}
+		.highway, .iphone-only {
+			display: none;
+		}
 
+		.ipad-only {
+			display: inline;
+		}
+	}
 }
