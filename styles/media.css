@@ -353,16 +353,16 @@
 }
 
 
-/* iOS DEVICES */
+/* iPad */
 
-@supports (-webkit-touch-callout: none) {
+@supports (-webkit-touch-callout: none) and (min-width: 741px) {
 	
-	.highway {
+	.highway, .mobile-only {
 		display: none;
 	}
 	
-	.mobile-only, .ios-only {
-		display: inline !important;
+	.ipad-only {
+		display: inline;
 	}
 
 }
