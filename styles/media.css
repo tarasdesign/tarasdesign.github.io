@@ -6,7 +6,7 @@
 
 @media all and (max-width: 740px) {
 	
-	.desktop-only, .button {
+	.desktop-only, .ipad-only, .button {
 		display: none;
 	}
 
