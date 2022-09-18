@@ -92,6 +92,12 @@
 		margin-bottom: 0;
 	}
 	
+	.col .col-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+	}
+	
 	.col-desc p {
 		font-size: 14px;
 		line-height: 24px;
@@ -128,7 +134,7 @@
 
 @media all and (min-width: 741px) {
 	
-	.mobile-only {
+	.mobile-only, .iphone-only, .ipad-only {
 		display: none;
 	}
 		
@@ -278,6 +284,10 @@
 		width: 800px;
 	}
 	
+	.col-desc {
+		width: 800px;
+	}
+	
 }
 
 @media all and (min-width: 1360px) {
@@ -357,7 +367,7 @@
 
 @supports (-webkit-touch-callout: none) and (min-width: 741px) {
 	
-	.highway, .mobile-only {
+	.highway, .iphone-only {
 		display: none;
 	}
 	

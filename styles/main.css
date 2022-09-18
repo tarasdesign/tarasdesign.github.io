@@ -102,6 +102,17 @@ img, video {
 	border-bottom: 1px solid var(--black);
 }
 
+.col-desc a {
+	font-size: 1em;
+	color: var(--ash);
+	border-bottom: 1px solid var(--ash);
+}
+
+.col-desc a:hover {
+	color: var(--black);
+	border-bottom: 1px solid var(--black);
+}
+
 ol li {
 	list-style: decimal;
 	list-style-position: outside;
