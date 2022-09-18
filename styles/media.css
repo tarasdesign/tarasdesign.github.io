@@ -270,6 +270,10 @@
 		width: 90%;
 	}
 	
+	.thumbs h2 {
+		width: 100%;
+	}
+	
 	.col {
 		width: 800px;
 	}
@@ -357,11 +361,8 @@
 		display: none;
 	}
 	
-	.ios-only {
-		display: block !important;
+	.mobile-only, .ios-only {
+		display: inline !important;
 	}
-	
-	h1, h2 {
-		background: yellow;
-	}
+
 }
