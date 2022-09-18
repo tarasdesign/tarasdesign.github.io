@@ -361,3 +361,19 @@
 	}
 
 }
+
+/* iPad */
+
+@media (min-width: 741px) {
+	
+	@supports (-webkit-touch-callout: none) {
+	
+		.highway, .iphone-only {
+			display: none;
+		}
+
+		.ipad-only {
+			display: inline;
+		}
+	}
+}
