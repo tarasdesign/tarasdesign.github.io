@@ -361,4 +361,7 @@
 		display: block !important;
 	}
 	
+	h1, h2 {
+		background: yellow;
+	}
 }
