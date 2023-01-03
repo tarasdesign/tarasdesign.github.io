@@ -3,6 +3,7 @@
 :root {
 	--black: #000;
 	--ash: #999;
+	--silver: #F4F4F4;
 }
 
 * {
@@ -41,8 +42,12 @@ h2 {
 	font-weight: 400;
 }
 
-h2 .title {
+.fade, .fade a {
 	color: var(--ash);
+}
+
+.line-through {
+  text-decoration: line-through;
 }
 
 h3 {
@@ -62,8 +67,6 @@ img, video {
 	width: 100%;
 }
 
-.gray {background: #ddd;}
-
 .block, .thumb {
 	display: block;
 }
@@ -71,10 +74,25 @@ img, video {
 .col-desc p {
 	color: var(--ash);
 	padding-top: 1em;
+	font-weight: 300;
 }
 
 .clear {
 	clear: both;
+}
+
+.scrollable {
+		overflow-x: scroll;
+	}
+	
+/* Hide scrollbar */
+.scrollable::-webkit-scrollbar {
+	display: none; /* Chrome, Safari and Opera */
+}
+
+.scrollable {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 }
 
 .button {
@@ -82,7 +100,6 @@ img, video {
 	color: white;
 	font-weight: 500;
 	display: inline-block;
-	padding: 16px 24px 5px 24px;
 }
 
 .button:hover {
@@ -94,11 +111,12 @@ img, video {
 	flex-wrap: wrap;
 }
 
-.menu a, .col a, h2 a {
+.col a, h2 a {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.menu a:hover, .col a:hover, h2 a:hover {
+.col a:hover, h2 a:hover {
+	color: var(--black);
 	border-bottom: 1px solid var(--black);
 }
 
@@ -113,6 +131,14 @@ img, video {
 	border-bottom: 1px solid var(--black);
 }
 
+.menu .selected {
+	color: var(--ash);
+}
+
+ul, ol {
+	margin-bottom: 1em;
+}
+
 ol li {
 	list-style: decimal;
 	list-style-position: outside;
@@ -122,6 +148,11 @@ ol li {
 ul li {
 	list-style: disc;
 	list-style-position: outside;
+	margin-left: 1.5em;
+}
+
+.nobullet li {
+	list-style: none;
 	margin-left: 1.5em;
 }
 
