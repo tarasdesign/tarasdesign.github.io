@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4483TZSC3"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-G4483TZSC3');
+</script>
+<title>Taras Sgibnev — Share &amp; Fly</title>
+<meta charset="UTF-8">
+<meta name="description" content="Design Portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/fonts/inter.css" rel="stylesheet" type="text/css">
+<link href="styles/main.css" rel="stylesheet" type="text/css">
+<link href="styles/media.css" rel="stylesheet" type="text/css">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<script src="scripts/main.js"></script>
+</head>
+<body>
+	<a class="logo" href="index.html" alt="Home page"></a>
+	<div class="menu">
+		<a href="projects.html" alt="All projects">Projects</a>
+		<a href="about.html" alt="My profile and contact info">About</a>
+	</div>
+
+	<div class="content">
+		
+		<div class="block fullwidth">
+			<img class="noindent" src="images/airport/airport-cover.jpg"/>
+		</div>
+		
+		<div class="block">
+			<h2><span class="fade">Share &amp; Save</span><br>ride-hailing service improvements for the airport travellers <span class="fade">⟶ <a href="#solution">jump to solution</a></span></h2>
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>Business opportunity</h3>
+				<p>According to data from the Transport Security Administration, passenger throughput at U.S. airports keeps climbing steadily and has almost achieved pre-pandemic levels in April 2022. Airports Council International Europe has revealed that passenger numbers at airports across the continent jumped 247% year-on-year in H1 2022, which is an additional 660 million passengers.</p>
+				<p>At the same time, Bolt ride-hailing GMV from airports is about 3%, while at other competitors rides make up to 10% of total revenue and 13% of gross bookings. Additionally, up to 8% of trips come from train stations and other types of transportation hubs alone. Our goal is to improve the airport rider experience to help bridge the current difference in revenue.</p>
+			</div>
+			<div class="col-desc">
+				<img src="images/airport/airport-stats-years.png"/>
+				<p>Average daily number of travelers passing through TSA checkpoints at U.S. airports as a share of 2019 traffic. Source:&nbsp;<a href="https://www.tsa.gov/coronavirus/passenger-throughput" target="_blank">U.S.&nbsp;Transport Security Administration</a></p>
+			</div>
+			<div class="col">
+				<div class="col-2">
+					<img src="images/airport/airport-stats-total.png" class="noindent"/>
+					<img src="images/airport/airport-stats-airports.png" class="noindent"/>
+				</div>
+			</div>
+			<div class="col">
+				<p>Usually, there are several options for getting from the city to the airport or in the opposite direction. In order of average price, the most popular are:</p>
+				<ol>
+					<li>Friend’s car, if you have one</li>
+					<li>Complimentary hotel shuttle, where available</li>
+					<li>Public transport, such as a bus, minibus, subway, or train</li>
+					<li>Car-sharing service</li>
+					<li>Ride-hailing service, such as Bolt, Uber, Lyft, Grab, and more:
+						<ul class="noindent">
+							<li>Ride-sharing <i>(not supported in Bolt in 2022)</i></li>
+							<li>Ride-on-demand</li>
+							<li>Pre-booked ride <i>(not supported in Bolt in 2022)</i></li>
+						</ul>
+					</li>
+					<li>Local taxicab</li>
+					<li>Long-term car rental</li>
+					<li>Private car service for premium users</li>
+				</ol>
+			</div>
+			<div class="col-desc">
+				<img src="images/airport/airport-stats-prices.png"/>
+				<p>Comparison of public and private transport pricing from Heathrow to the centre of London, 2022.</p>
+			</div>
+			<div class="col">
+				<p>Travelling by taxi or minicab was the most popular mode of transport for arriving at Heathrow. This number has been gradually increasing over 2 decades and reached 32% by 2019.</p>
+			</div>
+			
+			<div class="col-desc">
+				<img src="images/airport/airport-stats-modes.png"/>
+				<p>Comparison of transport modes people used to get to Heathrow, 2002 vs 2019. Source:&nbsp;<a href="https://www.statista.com/statistics/303808/transportation-to-heathrow-airport-used-in-the-uk/" target="_blank">Statista</a></p>
+			</div>
+			<div class="col noindent">
+				<div class="col-2">
+					<img src="images/airport/airport-stats-travellers.png" class="noindent"/>
+					<img src="images/airport/airport-stats-baggage.png" class="noindent"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>Challenge</h3>
+				<p>My assignment was to design an experience integrated into Bolt app that would help deliver passengers to or from the airport in the most effective way. In other words, <strong>how to reduce the average price without compromising the user experience?</strong> There were two main directions to be considered, both of them had some downsides though.</p>
+			</div>
+			<div class="col">
+				<img src="images/airport/airport-diagram-ridesharing.png"/>
+				<p><strong>1. Ride-sharing mode:</strong> 2–3 riders share a significant part of their route</p>
+				<ul class="nobullet">
+					<li>👍&nbsp;&nbsp;Up to 40% off</li>
+					<li>👍&nbsp;&nbsp;On-demand stops</li>
+					<li>👍&nbsp;&nbsp;Flexible pick-up time</li>
+					<li>👍&nbsp;&nbsp;Easier to integrate into the ride-hailing flow</li>
+				</ul>
+				<ul class="nobullet">
+					<li>👎&nbsp;&nbsp;Hard to match riders in sparsely populated areas</li>
+					<li>👎&nbsp;&nbsp;You never know who you are going to share your ride with</li>
+					<li>👎&nbsp;&nbsp;Another rider might be late</li>
+				</ul>
+			</div>
+			<div class="col">
+				<img src="images/airport/airport-diagram-bus.png"/>
+				<p><strong>2. Airport bus shuttle:</strong> 10–50 passengers per bus</p>
+				<ul class="nobullet">
+					<li>👍&nbsp;&nbsp;Much cheaper</li>
+					<li>👍&nbsp;&nbsp;Additionally, standard taxi can be offered to deliver people to the bus stop</li>
+				</ul>
+				<ul class="nobullet">
+					<li>👎&nbsp;&nbsp;Limited bus stop locations</li>
+					<li>👎&nbsp;&nbsp;Luggage issues</li>
+					<li>👎&nbsp;&nbsp;Fixed timetable</li>
+					<li>👎&nbsp;&nbsp;Would be tricky to mix with taxi within a single flow</li>
+					<li>👎&nbsp;&nbsp;Collaboration with bus companies may be required</li>
+				</ul>
+				<p>As my task was to integrate the solution into the existing ride-hailing app, I decided to proceed with the ride-sharing feature. The shuttle requires quite a different user flow so I would rather design it as a separate domain.</p>
+			</div>
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>User research</h3>
+				<p>I interviewed the most frequent airport visitors who travelled at least 4 times a year before the pandemic. The purpose of the study was to understand how they preferred to get to the airport and why they chose this or that option.</p>
+				<p>Most people change or combine their mobility choices based on multiple factors such as price, distance, trip purpose, time limits, traffic and weather conditions, co-riders, amount of luggage, the rider’s emotional and physical condition. When intending to order a taxi, people consider price, ETA (estimated time of arrival), and time to reach destination, always assessed in relation to what they’re being proposed by competitor apps. Here are some findings and ideas grouped by types of riders:</p>
+			</div>
+		</div>
+		
+		<div class="block scrollable">
+			<img src="images/airport/airport-users.png" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<p>In fact, about a half of all travellers share their ride to or from the airport with someone else, mostly friends, relatives or business partners. Perhaps the most interesting question is what can make people take a ride with a stranger.</p>
+				<ol>
+					<li><strong>Splitting the bill</strong> is obviously the most popular reason of ride-sharing.</li>
+					<li>The desire to save money is not directly related to the level of income. Some people find bargain-hunting really <strong>fun</strong>.</li>
+					<li>Some people get <strong>bored with travelling alone</strong>.</li>
+					<li>Shared business trips are very important for <strong>networking</strong>.</li>
+					<li>Unlike public transport, a taxi car is treated as a personal area. Thus, ride-sharing feature may face <strong>social and cultural barriers</strong> as well as <strong>privacy and safety</strong> issues.</li>
+					<li>Riders <strong>feel safer</strong> if the driver’s <strong>identity is verified</strong> and represented in the app.</li>
+					<li>While some respondents are wary of ride-sharing with strangers, they don’t mind interacting with them at the airport, especially foreigners.</li>
+					<li>Some people use <strong>dating apps</strong> to find travel contacts, including drivers.</li>
+				</ol>
+				<p>I decided to focus on individual tourists who are certainly the largest audience and who are most likely to find the ride-sharing mode relevant.</p>
+			</div>
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>User journey</h3>
+				<p>There might be plenty of issues during a taxi ride, especially if you are going to the airport. Let’s put them into the context to better understand how we might solve the most critical ones and avoid user’s uncertainty, frustration, last-minute rush and stress.</p>
+			</div>
+		</div>
+		
+		<div class="block scrollable">
+			<img src="images/airport/airport-user-journey.png" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<ol>
+					<li>Increased demand can significantly affect the price and ETA.</li>
+					<li>Duration of the ride depends on traffic and other factors.</li>
+					<li>The flight might be delayed or cancelled.</li>
+					<li>A familiar ride-hailing service may be unavailable in the city of arrival.</li>
+					<li>Limited internet connection and other technical issues after the arrival.</li>
+					<li>It’s hard to find the pick-up location or a particular car among many other vehicles of the same taxi-fleet.</li>
+					<li>Airports regulate where taxi may pick up, drop off, or wait for passengers.</li>
+					<li>In case of ride-sharing, co-riders may carry too much luggage, be late or simply annoying.</li>
+					<li>If the driver speaks a different language, communication and navigation issues are expected.</li>
+				</ol>
+			</div>
+		</div>
+		<div class="block">
+			<div class="col">
+				<h3>User stories</h3>
+				<p>Based on previous research discoveries, I defined basic user stories to help formulate how the proposed features will provide value to the riders.</p>
+				<ol>
+					<li>As a rider, I want to be able to <strong>choose</strong> who to share my ride with so that we can <strong>split the price</strong>.</li>
+					<li>As a rider, I want to get to the airport <strong>on time</strong> so I neither miss my flight nor have to wait too long.</li>
+					<li>As a rider, I want to <strong>schedule</strong> my trip from the airport so I don’t have to worry about it after landing.</li>
+					<li>As a rider, I want to <strong>quickly</strong> find a <strong>verified</strong> driver so that I can feel <strong>safe</strong> in an unknown area.</li>
+				</ol>
+			</div>
+		</div>
+		<div class="block">
+			<div class="col">
+				<h3>Prioritization</h3>
+				<p>Next, we tried to estimate the effort required to implement features that are currently missing in the app and that can significantly improve the user experience.</p>
+			</div>
+			<div class="col-desc">
+				<img src="images/airport/airport-prioritization.png" class="noindent"/>
+				<p>Impact/Effort matrix to assess the feasibility of ideas.</p>
+			</div>
+		</div>
+		
+		<div class="block" id="solution">
+			<div class="col">
+				<h3>Solution</h3>
+				<p>The prototype of a proposed solution consists of several features and user flows that support and supplement each another. However, they are supposed to be divided into separate projects implemented and tested one by one:</p>
+				<ol>
+					<li>Flexible ride scheduling with flight status updates</li>
+					<li>Ride-sharing with co-riders who have matched each other</li>
+					<li>Custom pick-up directions</li>
+					<li>Splitting the bill with friends</li>
+				</ol>
+			</div>
+		</div>
+		
+		<div class="block scrollable">
+			<img src="images/airport/airport-user-flow.png" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>1. Ride scheduling</h3>
+				<p>Unlike the majority of competitors, we don’t ask you to input the pick-up time. While scheduling a ride, people are more concerned about when exactly they will get to the airport. So, we calculate the optimal pick-up time based on the route distance, expected traffic, surge, weather conditions and airport congestion. Moreover, the drop-off ETA can be rescheduled automatically if the flight is delayed.</p>
+			</div>
+		</div>
+		
+		<div class="block fullwidth">
+			<img src="images/airport/airport-landing.jpg" />
+			<img src="images/airport/airport-scheduling.png" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<p>The ride scheduling can also help solve another business problem: our customers may be unaware that Bolt operates in 50+ countries outside of their immediate market. So, we should remind this in advance when the rider is approaching the airport, and suggest them to pre-book another ride from the airport to their final destination. If the rider has input their flight details in advance, the flow can be even smoother as we already know their landing location and time.</p>
+			</div>
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>2. Ride-sharing</h3>
+				<p>The scheduled ride price is higher because we have to guarantee the driver will arrive on time regardless of demand. However, we can try to match several co-riders heading the same direction to make the service more affordable.</p>
+			</div>
+		</div>
+		
+		<div class="block fullwidth">
+			<img src="images/airport/airport-sharing.png" class="noindent" />
+		</div>
+			
+		<div class="block">
+			<div class="col">
+				<p>My proposal suggests allowing ride-sharing passengers to preview and select their co-riders by inviting or accepting invitations from each other, or opting to pay the standard fare to travel alone. If no co-rider is selected or invited, the system will automatically match remaining pairs of passengers before the driver starts moving towards the first one.</p>
+				<p>This logic aims to address the problem of anxiety felt by passengers when sharing a ride with strangers by giving them more control over who they travel with.</p>
+			</div>
+		</div>
+		
+		<div class="block fullwidth">
+			<img src="images/airport/airport-watch.jpg" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>3. Pick-up directions</h3>
+				<p>Another problem is that people who order a taxi from the airport tend to have difficulties while looking for their driver in the crowded airport parking zone. Sometimes it’s not even clear how to get out of the airport.</p>
+				<p>In MVP, we reduced confusion and delays by means of step-by-step instructions explaining how to get from the arrival area to the taxi pick-up location.</p>
+			</div>
+		</div>
+		
+		<div class="block fullwidth">
+			<img src="images/airport/airport-directions.png" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<p>In the next iterations, it would make sense to support AR navigation as a more visual, immersive and interactive way to guide people. The implementation may be quite challenging though due to unstable GPS data inside large buildings, which can disrupt the reliability of the feature.</p>
+				<p>To address this issue, it may be necessary to use additional sensors or technologies, such as Bluetooth beacons or Wi-Fi triangulation, to supplement the GPS data and provide a more accurate location signal.</p>
+			</div>
+		</div>
+		
+		<div class="block fullwidth">
+			<img src="images/airport/airport-directions-ar.png" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>4. Splitting the bill</h3>
+				<p>People often share trips with friends, so they don’t need the app to find fellow travellers in this case. However, they still want an easy and convenient way to split their bill.</p>
+				<p>The proposed feature not only allows the rider to split the fare equally between their friends, but is also an excellent way to acquire new users who haven’t signed up for Bolt yet.</p>
+			</div>
+		</div>
+		
+		<div class="block fullwidth">
+			<img src="images/airport/airport-split.png" class="noindent" />
+		</div>
+		
+		<div class="block">
+			<div class="col">
+				<h3>The impact</h3>
+				<p>After a year of testing, the redesign of the Bolt Rider app on iOS and Android has had a positive impact on the rider experience and a range of key product metrics. GMV coming from the airports has <strong>increased by 15%</strong>. However, the proposed features have been only partially implemented so there are still much more to do.</p>
+				<p><strong>82%</strong> of users who tried sharing their rides with strangers, appreciated the opportunity to choose a co-rider after previewing their profile. <strong>About a half</strong> of the fellow travellers were successfully matched with each other, while a third was automatically matched by the system. <strong>Only 5%</strong> of riders cancelled their order — this is not higher than the average cancellation rate of standard ride types. In general, the ride-sharing experience has proven its efficiency for the airport trips. So it would make sense to support other transportation hubs and densely populated areas.</p>
+			</div>
+			<div class="col">
+				<div class="col-2">
+					<img src="images/airport/airport-stats-sharing.png"/>
+					<img src="images/airport/airport-stats-matching.png"/>
+				</div>
+				<p>The success of the ride scheduling feature is largely dependent on the reliability of the service and the accuracy of ETA. While this feature has only contributed to <strong>2% of GMV</strong>, there is still significant room for improvement in order to increase its effectiveness.</p>
+				<p>The number of successful <strong>scheduled rides increased by 12%</strong> after we allowed people to input the desired time of arrival at their destination rather than the pick-up time. However, the idea of searching by flight number didn’t pay off because most users preferred to enter their drop-off time manually.</p>
+				<p>Pick-up directions have significantly improved the pick-up experience at the airports and <strong>increased the number of finished orders by 3%</strong>. The error distance between requested pickup location and actual pickup location decreased by 28%. Driver wait-time decreased by 25%, which led to a <strong>5% drop</strong> in the cancellation rate.</p>
+				<p>The bill splitting has been successful in acquiring new users, with a <strong>twice lower churn rate</strong> among those acquired through this feature compared to other marketing channels.</p>
+				<p><i>For confidentiality reasons I have omitted the actual values for metrics mentioned above.</i></p>
+			</div>
+		</div>
+		
+		<div class="block footer">
+			<a href="burst.html"><h2>Next project →</h2></a>
+		</div>
+		
+	</div>
+		
+</body>
+</html>
