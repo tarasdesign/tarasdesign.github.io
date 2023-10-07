@@ -43,7 +43,7 @@
 	
 	h2, h2 a, .thumb p {
 		font-size: 28px;
-		line-height: 40px;
+		line-height: 36px;
 	}
 	
 	h3 {
@@ -137,6 +137,13 @@
 	.footer {
 		padding-top: 20vh;
 	}
+	
+	.intro {
+		width: 85%;
+		padding-top: 16px;
+		margin-left: 0;
+		padding-bottom: 20px;
+	}
 
 }
 
@@ -156,7 +163,7 @@
 	
 	h2, h2 a {
 		font-size: 60px;
-		line-height: 80px;
+		line-height: 76px;
 	}
 	
 	h3 {
@@ -225,8 +232,8 @@
 	}
 
 	.button {
-		margin-top: 32px;
-		margin-bottom: 32px;
+		margin-top: 36px;
+		margin-bottom: 36px;
 		line-height: 28px;
 		height: 40px;
 		padding: 16px 24px 5px 24px;
@@ -279,6 +286,12 @@
 		padding-top: 20vh;
 	}
 	
+	.intro {
+		width: 70%;
+		padding-top: 36px;
+		margin-left: 0;
+		padding-bottom: 20px;
+	}
 }
 
 @media all and (min-width: 1020px) {
@@ -315,6 +328,12 @@
 	
 	.col-desc {
 		width: 800px;
+	}
+	
+	.intro {
+		width: 55%;
+		margin-left: 0;
+		padding-bottom: 40px;
 	}
 	
 }
@@ -366,6 +385,11 @@
 	.highway {
 		background-size: calc(100% - 160px);
 	}
+	
+	.intro {
+		width: 45%;
+		margin-left: 0;
+	}
 
 }
 
@@ -385,6 +409,11 @@
 	
 	.highway {
 		background-size: 1400px;
+	}
+	
+	.intro {
+		width: 40%;
+		margin-left: 0;
 	}
 
 }
