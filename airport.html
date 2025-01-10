@@ -1,30 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4483TZSC3"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-G4483TZSC3');
-</script>
-<title>Taras Sgibnev — Share &amp; Fly</title>
-<meta charset="UTF-8">
-<meta name="description" content="Design Portfolio">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="styles/fonts/inter.css" rel="stylesheet" type="text/css">
-<link href="styles/main.css" rel="stylesheet" type="text/css">
-<link href="styles/media.css" rel="stylesheet" type="text/css">
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-<link rel="manifest" href="images/favicon/site.webmanifest">
-<script src="scripts/main.js"></script>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4483TZSC3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-G4483TZSC3');
+	</script>
+	<title>Taras Sgibnev — Share &amp; Fly</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Design Portfolio">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles/fonts/inter.css" rel="stylesheet" type="text/css">
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+	<link href="styles/media.css" rel="stylesheet" type="text/css">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<script src="scripts/main.js"></script>
 </head>
 <body>
-	<a class="logo" href="index.html" alt="Home page"></a>
+	<a class="logo" href="index.html" alt="Homepage"></a>
 	<div class="menu">
+		<a href="index.html" alt="Homepage" class="desktop-only">Home</a>
 		<a href="projects.html" alt="All projects">Projects</a>
 		<a href="about.html" alt="My profile and contact info">About</a>
 	</div>
@@ -36,10 +37,27 @@
 		</div>
 		
 		<div class="block">
-			<h2><span class="fade">Share &amp; Save</span><br>ride-hailing service improvements for the airport travellers <span class="fade">⟶ <a href="#solution">jump to solution</a></span></h2>
+			<h2><span class="fade">Share &amp; Save</span><br>ride-hailing service improvements for the airport travellers</h2>
 		</div>
 		
 		<div class="block">
+			<div class="col navigation">
+				<div>
+					<h3>Project stages</h3>
+					<ol>
+						<li><a href="#opportunity">Business opportunity</a></li>
+						<li><a href="#challenge">Design challenge</a></li>
+						<li><a href="#research">User research</a></li>
+						<li><a href="#journey">User journey &amp; user stories</a></li>
+						<li><a href="#prioritisation">Feature prioritisation</a></li>
+						<li><a href="#solution">Solution</a> ✨</li>
+						<li><a href="#impact">Business impact</a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		
+		<div class="block" id="opportunity">
 			<div class="col">
 				<h3>Business opportunity</h3>
 				<p>According to data from the Transport Security Administration, passenger throughput at U.S. airports keeps climbing steadily and has almost achieved pre-pandemic levels in April 2022. Airports Council International Europe has revealed that passenger numbers at airports across the continent jumped 247% year-on-year in Q1 2022, which is an additional 660 million passengers.</p>
@@ -94,9 +112,9 @@
 			</div>
 		</div>
 		
-		<div class="block">
+		<div class="block" id="challenge">
 			<div class="col">
-				<h3>Challenge</h3>
+				<h3>Design Challenge</h3>
 				<p>My assignment was to design an experience integrated into Bolt app that would help deliver passengers to or from the airport in the most effective way. In other words, <strong>how to reduce the average price without compromising the user experience?</strong> There were two main directions to be considered, both of them had some downsides though.</p>
 			</div>
 			<div class="col">
@@ -119,7 +137,7 @@
 				<p><strong>2. Airport bus shuttle:</strong> 10–50 passengers per bus</p>
 				<ul class="nobullet">
 					<li>👍&nbsp;&nbsp;Much cheaper</li>
-					<li>👍&nbsp;&nbsp;Additionally, standard taxi can be offered to deliver people to the bus stop</li>
+					<li>👍&nbsp;&nbsp;Taxis can be upsold to reach shuttle stops</li>
 				</ul>
 				<ul class="nobullet">
 					<li>👎&nbsp;&nbsp;Limited bus stop locations</li>
@@ -132,7 +150,7 @@
 			</div>
 		</div>
 		
-		<div class="block">
+		<div class="block" id="research">
 			<div class="col">
 				<h3>User research</h3>
 				<p>I interviewed the most frequent airport visitors who travelled at least 4 times a year before the pandemic. The purpose of the study was to understand how they preferred to get to the airport and why they chose this or that option.</p>
@@ -161,7 +179,7 @@
 			</div>
 		</div>
 		
-		<div class="block">
+		<div class="block" id="journey">
 			<div class="col">
 				<h3>User journey</h3>
 				<p>There might be plenty of issues during a taxi ride, especially if you are going to the airport. Let’s put them into the context to better understand how we might solve the most critical ones and avoid user’s uncertainty, frustration, last-minute rush and stress.</p>
@@ -199,9 +217,9 @@
 				</ol>
 			</div>
 		</div>
-		<div class="block">
+		<div class="block" id="prioritisation">
 			<div class="col">
-				<h3>Prioritization</h3>
+				<h3>Feature prioritisation</h3>
 				<p>Next, we tried to estimate the effort required to implement features that are currently missing in the app and that can significantly improve the user experience.</p>
 			</div>
 			<div class="col-desc">
@@ -235,7 +253,7 @@
 		</div>
 		
 		<div class="block fullwidth">
-			<img src="images/airport/airport-scheduling.png" class="noindent" />
+			<img src="images/airport/airport-scheduling.jpg" class="noindent" />
 		</div>
 		
 		<div class="block">
@@ -252,7 +270,7 @@
 		</div>
 		
 		<div class="block fullwidth">
-			<img src="images/airport/airport-sharing.png" class="noindent" />
+			<img src="images/airport/airport-sharing.jpg" class="noindent" />
 		</div>
 			
 		<div class="block">
@@ -275,7 +293,7 @@
 		</div>
 		
 		<div class="block fullwidth">
-			<img src="images/airport/airport-directions.png" class="noindent" />
+			<img src="images/airport/airport-directions.jpg" class="noindent" />
 		</div>
 		
 		<div class="block">
@@ -298,12 +316,12 @@
 		</div>
 		
 		<div class="block fullwidth">
-			<img src="images/airport/airport-split.png" class="noindent" />
+			<img src="images/airport/airport-split.jpg" class="noindent" />
 		</div>
 		
-		<div class="block">
+		<div class="block" id="impact">
 			<div class="col">
-				<h3>The impact</h3>
+				<h3>Business impact</h3>
 				<p>After a year of testing, the redesign of the Bolt Rider app on iOS and Android has had a positive impact on the rider experience and a range of key product metrics. GMV coming from airports <strong>increased by 2.5 times and reached 8%</strong>. However, the proposed features have been only partially implemented so there are still much more to do.</p>
 				<p><strong>82%</strong> of users who tried sharing their rides with strangers, appreciated the opportunity to choose a co-rider after previewing their profile. <strong>About a half</strong> of the fellow travellers were successfully matched with each other, while a third was automatically matched by the system. <strong>Only 5%</strong> of riders cancelled their order — this is not higher than the average cancellation rate of standard ride types. In general, the ride-sharing experience has proven its efficiency for the airport trips. So it would make sense to support other transportation hubs and densely populated areas.</p>
 			</div>
@@ -321,7 +339,7 @@
 		</div>
 		
 		<div class="block footer">
-			<a href="burst.html"><h2>Next project →</h2></a>
+			<a href="wannasee.html"><h2>Next project →</h2></a>
 		</div>
 		
 	</div>
