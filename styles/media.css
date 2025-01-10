@@ -125,7 +125,6 @@
 	.logo {
 		position: absolute;
 		display: block;
-		background-image: url("../images/logo.svg");
 		background-size: 36px 24px;
 		width: 36px;
 		height: 24px;
@@ -140,9 +139,16 @@
 	
 	.intro {
 		width: 85%;
-		padding-top: 16px;
-		margin-left: 0;
+		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+	
+	.navigation {
+		border-radius: 12px;
+	}
+	
+	.navigation div {
+		padding: 20px;
 	}
 
 }
@@ -268,7 +274,6 @@
 	.logo {
 		position: absolute;
 		display: block;
-		background-image: url("../images/logo.svg");
 		background-size: 60px 40px;
 		width: 60px;
 		height: 40px;
@@ -288,10 +293,8 @@
 	
 	.intro {
 		width: 70%;
-		padding-top: 36px;
-		margin-left: 0;
-		padding-bottom: 20px;
 	}
+
 }
 
 @media all and (min-width: 1020px) {
@@ -331,9 +334,7 @@
 	}
 	
 	.intro {
-		width: 55%;
-		margin-left: 0;
-		padding-bottom: 40px;
+		width: 50%;
 	}
 	
 }
@@ -388,7 +389,6 @@
 	
 	.intro {
 		width: 45%;
-		margin-left: 0;
 	}
 
 }
@@ -413,7 +413,6 @@
 	
 	.intro {
 		width: 40%;
-		margin-left: 0;
 	}
 
 }
