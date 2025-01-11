@@ -1,30 +1,38 @@
 // JavaScript Document
 
-window.onload = swap;
+window.onload = init;
 
-function swap() {
-	var numimages = 6;
-	var x = (Math.floor(Math.random() * numimages));
-	var randomimage = new Array(
-		"images/logo/logo1.svg",
-		"images/logo/logo2.svg",
-		"images/logo/logo3.svg",
-		"images/logo/logo4.svg",
-		"images/logo/logo5.svg",
-		"images/logo/logo6.svg"
-	);
-	randomimage=(randomimage[x]);
-	document.getElementsByClassName("logo")[0].style.backgroundImage = "url("+ randomimage +")";	
+let previousIndex = -1; // Store the index of the previously displayed image
+
+function init() {
+    // Call the swap function on page load
+    swap();
+
+    // Add click event listener to the first element with class "icon"
+    var iconElement = document.getElementsByClassName("icon")[0];
+    if (iconElement) {
+        iconElement.addEventListener("click", swap);
+    }
 }
 
+function swap() {
+    var numimages = 6;
+    var randomimage = [
+        "images/icon/icon1.svg",
+        "images/icon/icon2.svg",
+        "images/icon/icon3.svg",
+        "images/icon/icon4.svg",
+        "images/icon/icon5.svg",
+        "images/icon/icon6.svg"
+    ];
 
-/*
+    let newIndex;
+    do {
+        newIndex = Math.floor(Math.random() * numimages);
+    } while (newIndex === previousIndex); // Ensure the new index is different
 
-$(document).ready(function() {
+    previousIndex = newIndex; // Update the previous index
+    var selectedImage = randomimage[newIndex];
 
-	'use strict';
-	
-	document.document.getElementsByClassName('autoplay').play();
-
-});
-*/
+    document.getElementsByClassName("icon")[0].style.backgroundImage = "url(" + selectedImage + ")";
+}
