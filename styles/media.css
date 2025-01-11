@@ -85,15 +85,6 @@
 	.noindent {
 		margin-bottom: 0;
 	}
-	/*
-	.col-2 .noindent {
-		margin-bottom: 20px;
-	}
-	
-	.col-2 .noindent:last-child {
-		margin-bottom: 0;
-	}
-	*/
 	
 	.col-2 {
 		display: grid;
@@ -122,7 +113,9 @@
 		width: 940px;
 	}
 	
-	.logo {
+	.icon {display: none;}
+	
+	/*.icon {
 		position: absolute;
 		display: block;
 		background-size: 36px 24px;
@@ -131,6 +124,17 @@
 		top: 22px;
 		left: calc((100% - 36px) / 2);
 		border-bottom: none !important;
+	}*/
+	
+	.menu a {
+		height: 31px;
+		padding-top: 5px;
+	}
+
+	.logo {
+		position: absolute;
+		left: calc((100% - 40px) / 2);
+		width: 36px;
 	}
 	
 	.footer {
@@ -182,7 +186,27 @@
 		line-height: 36px;
 		margin: 24px 0 8px 0;
 	}
-		
+	
+	.menu a {
+		height: 41px;
+		padding-top: 5px;
+	}
+
+	.logo {
+		width: 46px;
+	}
+	
+	.icon {
+		position: absolute;
+		display: block;
+		background-size: 60px 40px;
+		width: 60px;
+		height: 40px;
+		top: 40px;
+		right: 40px;
+		border-bottom: none !important;
+	}
+	
 	.content {
 		margin-top: 40px;
 	}
@@ -270,17 +294,6 @@
 	.home img, .thumb img, .noindent {
 		margin-bottom: 0;
 	}
-			
-	.logo {
-		position: absolute;
-		display: block;
-		background-size: 60px 40px;
-		width: 60px;
-		height: 40px;
-		top: 40px;
-		right: 40px;
-		border-bottom: none !important;
-	}
 	
 	.highway {
 		background-size: calc(100% - 80px);
@@ -320,6 +333,14 @@
 		margin: 24px 0 8px 0;
 	}
 	
+	.menu a {
+		height: 43px;
+		padding-top: 5px;
+	}
+
+	.logo {
+		width: 48px;
+	}
 	
 	.scrollable img {
 		width: 100%;
@@ -344,6 +365,10 @@
 	.block, .thumbs, .menu {
 		padding-left: 80px;
 		padding-right: 80px;
+	}
+	
+	.icon {
+		right: 80px;
 	}
 	
 	.thumbs {
@@ -379,10 +404,6 @@
 		width: auto;
 	}
 	
-	.logo {
-		right: 80px;
-	}
-	
 	.highway {
 		background-size: calc(100% - 160px);
 	}
@@ -403,7 +424,7 @@
 		padding-right: 0;
 	}
 
-	.logo {
+	.icon {
 		right: calc((100% - 1400px) / 2);
 	}
 	
