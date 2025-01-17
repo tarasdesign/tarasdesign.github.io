@@ -81,7 +81,7 @@ img, video {
 	display: block;
 }
 
-.col-desc p, .desc {
+.col-desc p {
 	color: var(--ash);
 	padding-top: 1em;
 	font-weight: 300;
@@ -209,8 +209,18 @@ ul li {
 	vertical-align: sub;
 }
 
+.year {
+	vertical-align: middle;
+	font-size: 0.5em;
+	letter-spacing: 0.02em;
+	border: 1.5px solid var(--ash);
+	color: var(--ash);
+	padding: 0.15em 0.5em;
+	border-radius: 2em;
+}
+
 .navigation {
-	background-color: #F0F0F0;
+	background-color: var(--silver);
 	border-radius: 20px;
 }
 

@@ -147,6 +147,12 @@
 		padding-bottom: 20px;
 	}
 	
+	.year {
+		font-size: 0.6em;
+		border: 1px solid var(--ash);
+		padding: 0.15em 0.5em;
+	}
+	
 	.navigation {
 		border-radius: 12px;
 	}
@@ -399,7 +405,6 @@
 	}
 	
 	.col-desc p {
-		padding-top: 0;
 		margin-bottom: 0;
 		width: auto;
 	}
