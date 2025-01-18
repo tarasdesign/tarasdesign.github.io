@@ -14,7 +14,7 @@
 		margin-top: 20px;
 	}
 	
-	.home, .thumbs {
+	.home {
 		margin-top: 60px;
 	}
 	
@@ -113,19 +113,10 @@
 		width: 940px;
 	}
 	
-	.icon {display: none;}
-	
-	/*.icon {
-		position: absolute;
-		display: block;
-		background-size: 36px 24px;
-		width: 36px;
-		height: 24px;
-		top: 22px;
-		left: calc((100% - 36px) / 2);
-		border-bottom: none !important;
-	}*/
-	
+	.icon {
+		display: none;
+	}
+		
 	.menu a {
 		height: 31px;
 		padding-top: 5px;
