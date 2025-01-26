@@ -123,7 +123,7 @@
 		width: 940px;
 	}
 	
-	.icon {
+	#icon-container {
 		display: none;
 	}
 		
@@ -150,7 +150,7 @@
 	
 	.year {
 		font-size: 0.6em;
-		border: 1px solid var(--ash);
+		border: 1px solid var(--contentSecondary);
 		padding: 0.15em 0.5em;
 	}
 	
@@ -180,7 +180,7 @@
 	
 	h2, h2 a {
 		font-size: 60px;
-		line-height: 76px;
+		line-height: 80px;
 	}
 	
 	h3 {
@@ -203,15 +203,9 @@
 		width: 46px;
 	}
 	
-	.icon {
-		position: absolute;
-		display: block;
-		background-size: 60px 40px;
-		width: 60px;
-		height: 40px;
+	#icon-container {
 		top: 40px;
 		right: 40px;
-		border-bottom: none !important;
 	}
 	
 	.content {
@@ -279,10 +273,6 @@
 	.menu a {
 		margin-top: 40px;
 		margin-right: 36px;
-	}
-	
-	h2 a, h2 a:hover {
-		border-bottom-width: 3px;
 	}
 	
 	.date {
@@ -374,7 +364,7 @@
 		padding-right: 80px;
 	}
 	
-	.icon {
+	#icon-container {
 		right: 80px;
 	}
 	
@@ -431,7 +421,7 @@
 		padding-right: 0;
 	}
 
-	.icon {
+	#icon-container {
 		right: calc((100% - 1400px) / 2);
 	}
 	
@@ -460,4 +450,41 @@
 			display: inline;
 		}
 	}
+}
+
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+
+	:root {
+		--backPrimary: #222;
+		--backSecondary: #333;
+		--contentPrimary: #ccc;
+		--contentSecondary: #777;
+	}
+	
+	.button {
+		background: #444;
+		color: var(--contentPrimary);
+	}
+
+	.button:hover {
+		background: #555;
+		color: white;
+		opacity: 1;
+	}
+	
+	a:hover {
+		color: white !important;
+	}
+	
+	.logo:hover {
+		background-color: white;
+		color: var(--backPrimary) !important;
+	}
+
+	#icon-container svg {
+		stroke-width: 3.5px;
+	}
+
 }

@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 :root {
-	--black: #000;
-	--ash: #999;
-	--silver: #F4F4F4;
+	--backPrimary: white;
+	--backSecondary: #F4F4F4;
+	--contentPrimary: black;
+	--contentSecondary: #999;
 }
 
 * {
@@ -14,10 +15,10 @@
 	vertical-align: baseline;
 }
 
-/* Smooth scrolling for anchor links */
-
 html {
 	scroll-behavior: smooth;
+	background-color: var(--backPrimary);
+	color: var(--contentPrimary);
 }
 
 [id] {
@@ -32,7 +33,6 @@ body {
 
 body {
 	font-family: 'Inter', sans-serif;
-	color: var(--black);
 	font-weight: 400;
 	-webkit-text-size-adjust: 100%;
 	-moz-text-size-adjust: none;
@@ -40,7 +40,7 @@ body {
 }
 
 a {
-	color: var(--black);
+	color: var(--contentPrimary);
 	text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ h2 {
 }
 
 .fade, .fade a {
-	color: var(--ash);
+	color: var(--contentSecondary);
 }
 
 .line-through {
@@ -82,7 +82,7 @@ img, video {
 }
 
 .col-desc p {
-	color: var(--ash);
+	color: var(--contentSecondary);
 	padding-top: 1em;
 	font-weight: 300;
 }
@@ -106,8 +106,8 @@ img, video {
 }
 
 .button {
-	background: var(--black);
-	color: white;
+	background: var(--contentPrimary);
+	color: var(--backPrimary);
 	font-weight: 500;
 	display: inline-block;
 }
@@ -126,14 +126,10 @@ img, video {
 }
 
 .logo {
-	color: white;
-	background-color: var(--black);
+	color: var(--backPrimary);
+	background-color: var(--contentPrimary);
 	border-radius: 40px;
 	text-align: center;
-}
-
-.icon {
-	background-image: url("../images/logo/logo1.svg");
 }
 
 .intro {
@@ -142,27 +138,27 @@ img, video {
 }
 
 .col a, h2 a {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid var(--contentSecondary);
 }
 
 .col a:hover, h2 a:hover {
-	color: var(--black);
-	border-bottom: 1px solid var(--black);
+	color: var(--contentPrimary);
+	border-bottom: 1px solid var(--contentPrimary);
 }
 
 .col-desc a {
 	font-size: 1em;
-	color: var(--ash);
-	border-bottom: 1px solid var(--ash);
+	color: var(--contentSecondary);
+	border-bottom: 1px solid var(--contentSecondary);
 }
 
 .col-desc a:hover {
-	color: var(--black);
-	border-bottom: 1px solid var(--black);
+	color: var(--contentPrimary);
+	border-bottom: 1px solid var(--contentPrimary);
 }
 
 .menu .selected {
-	color: var(--ash);
+	color: var(--contentSecondary);
 }
 
 ul, ol {
@@ -213,17 +209,28 @@ ul li {
 	vertical-align: middle;
 	font-size: 0.5em;
 	letter-spacing: 0.02em;
-	border: 1.5px solid var(--ash);
-	color: var(--ash);
+	border: 1.5px solid var(--contentSecondary);
+	color: var(--contentSecondary);
 	padding: 0.15em 0.5em;
 	border-radius: 2em;
 }
 
 .navigation {
-	background-color: var(--silver);
+	background-color: var(--backSecondary);
 	border-radius: 20px;
 }
 
 .navigation div {
 	padding: 40px;
+}
+
+#icon-container {
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 40px;
+	border-bottom: none !important;
+	stroke-width: 4px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
 }
