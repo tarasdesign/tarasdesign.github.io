@@ -456,14 +456,14 @@
 
 @media (prefers-color-scheme: dark) and (max-width: 740px) {
 
-	body.dark {
+	body {
 		--backPrimary: #222;
 		--backSecondary: #333;
 		--contentPrimary: #ddd;
 		--contentSecondary: #888;
 	}
 	
-	body.dark .button {
+	body .button {
 		background: #444;
 		color: var(--contentPrimary);
 	}
