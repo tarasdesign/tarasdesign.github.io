@@ -1,5 +1,61 @@
 // JavaScript Document
 
+// Define paths to SVG icons
+const sunIcon = 'images/icon/sun.svg';
+const moonIcon = 'images/icon/moon.svg';
+
+// Run the function on page load
+window.onload = init;
+
+function init() {
+    applyStoredTheme();
+    document.getElementById('icon-container').addEventListener('click', toggleTheme);
+}
+
+// Function to toggle theme
+function toggleTheme() {
+    const currentTheme = document.body.className;
+    let newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    let svgPath = newTheme === 'light' ? moonIcon : sunIcon;
+    
+    document.body.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+    updateIcon(svgPath);
+}
+
+// Apply theme from localStorage (if set)
+function applyStoredTheme() {
+    let storedTheme = localStorage.getItem('theme') || 'light';
+    let svgPath = storedTheme === 'light' ? moonIcon : sunIcon;
+    
+    document.body.className = storedTheme;
+    updateIcon(svgPath);
+}
+
+// Function to update icon
+function updateIcon(svgPath) {
+    var svgContainer = document.getElementById("icon-container");
+    fetch(svgPath)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Failed to fetch SVG: ${response.statusText}`);
+        }
+        return response.text(); // Get the SVG content as text
+    })
+    .then(svgContent => {
+        svgContainer.innerHTML = svgContent; // Insert SVG content into the container
+    })
+    .catch(error => {
+        console.error('Error loading SVG:', error);
+    });
+}
+
+
+
+/*
+
+// Randomly swap images on click
+
 window.onload = init;
 
 let previousIndex = -1; // Store the index of the previously displayed image
@@ -40,7 +96,7 @@ function swap() {
     // Add background image with CSS
     // document.getElementsByClassName("icon-container")[0].style.backgroundImage = "url(" + selectedImage + ")";
 
-    // Fetch the SVG content
+    // Fetch the SVG content to insert into HTML
     fetch(svgPath)
     .then(response => {
         if (!response.ok) {
@@ -55,3 +111,4 @@ function swap() {
         console.error('Error loading SVG:', error);
     });
 }
+*/
