@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-:root {
+body {
 	--backPrimary: white;
 	--backSecondary: #F4F4F4;
 	--contentPrimary: black;
@@ -17,8 +17,6 @@
 
 html {
 	scroll-behavior: smooth;
-	background-color: var(--backPrimary);
-	color: var(--contentPrimary);
 }
 
 [id] {
@@ -26,9 +24,14 @@ html {
 }
 
 body {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	background-color: var(--backPrimary);
+	color: var(--contentPrimary);
 }
 
 body {
@@ -227,10 +230,50 @@ ul li {
 #icon-container {
 	position: absolute;
 	display: block;
-	width: 60px;
-	height: 40px;
-	border-bottom: none !important;
-	stroke-width: 4px;
+	width: 48px;
+	height: 48px;
+}
+
+#icon-container svg {
+	display: block;
+	width: 48px;
+	height: 48px;
+	stroke-width: 3px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+/* Dark mode modifications */
+
+body.dark {
+	--backPrimary: #222;
+	--backSecondary: #333;
+	--contentPrimary: #ddd;
+	--contentSecondary: #888;
+}
+
+body.dark .button {
+	background: #444;
+	color: var(--contentPrimary);
+}
+
+body.dark .button:hover {
+	background: #555;
+	color: white;
+	opacity: 1;
+}
+
+body.dark a:hover {
+	color: white !important;
+}
+
+body.dark .logo:hover {
+	background-color: white;
+	color: var(--backPrimary) !important;
+}
+
+body.dark #icon-container svg:hover {
+	color: white;
 }

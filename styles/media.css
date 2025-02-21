@@ -435,7 +435,6 @@
 
 }
 
-
 /* iPad */
 
 @media (min-width: 741px) {
@@ -453,38 +452,20 @@
 }
 
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
+/* Automatic Dark Mode */
 
-	:root {
+@media (prefers-color-scheme: dark) and (max-width: 740px) {
+
+	body.dark {
 		--backPrimary: #222;
 		--backSecondary: #333;
-		--contentPrimary: #ccc;
-		--contentSecondary: #777;
+		--contentPrimary: #ddd;
+		--contentSecondary: #888;
 	}
 	
-	.button {
+	body.dark .button {
 		background: #444;
 		color: var(--contentPrimary);
-	}
-
-	.button:hover {
-		background: #555;
-		color: white;
-		opacity: 1;
-	}
-	
-	a:hover {
-		color: white !important;
-	}
-	
-	.logo:hover {
-		background-color: white;
-		color: var(--backPrimary) !important;
-	}
-
-	#icon-container svg {
-		stroke-width: 3.5px;
 	}
 
 }
